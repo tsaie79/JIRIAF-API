@@ -15,13 +15,12 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python",
-				//copilot extension
-				"vscode-copilot.copilot"
+				"GitHub.copilot"
 			]
 		}
 	},
-	"runArgs": ["--network", "host"]
+	"runArgs": ["--network", "host"],
+	"postStartCommand": "python -m pip install -r requirements.txt",
 	// "forwardPorts": [3306],
 
 
