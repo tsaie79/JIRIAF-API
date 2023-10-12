@@ -8,8 +8,22 @@
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {}
-	}
+		"ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {},		
+		// mysql client
+		// "ghcr.io/devcontainers-contrib/features/mysql-client:1": {},
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				//copilot extension
+				"vscode-copilot.copilot"
+			]
+		}
+	},
+	"runArgs": ["--network", "host"]
+	// "forwardPorts": [3306],
+
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
