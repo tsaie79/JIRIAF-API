@@ -21,7 +21,7 @@
 		}
 	},
 	"runArgs": ["--network", "host"],
-	"postStartCommand": "python -m pip install -r requirements.txt",
+	"postStartCommand": "pip install -r /workspaces/JIRIAF-API/requirements.txt",
 	// "forwardPorts": [3306],
 
 
